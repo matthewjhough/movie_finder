@@ -19,7 +19,7 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('dist'));
     gulp.src('src/scripts/vendors/**/*.*')
         .pipe(gulp.dest('dist/scripts'));
-});
+}); 
 
 
 // watch both tasks
