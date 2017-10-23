@@ -24,3 +24,4 @@ gulp.task('copy', function() {
 gulp.task('default', ['browserify', 'copy'], function() {
     return gulp.watch('src/**/*.*', ['browserify', 'copy'] )
 });
+
