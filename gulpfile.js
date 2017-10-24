@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 var browserify = require('browserify');
 var reactify = require('reactify');
+var babel = require('gulp-babel');
 var source = require('vinyl-source-stream');
+var buffer = require('vinyl-buffer');
 
 
 gulp.task('browserify', function() {
@@ -9,6 +11,8 @@ gulp.task('browserify', function() {
         .transform('reactify')
         .bundle()
         .pipe(source('main.js'))
+        .pipe(buffer())
+        .pipe(babel())
         .pipe(gulp.dest('dist/scripts'));
 });
 

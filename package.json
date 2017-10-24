@@ -14,7 +14,13 @@
     "flux": "*",
     "reactify": "*",
     "vinyl-source-stream": "*",
-    "object-assign": "*"
+    "object-assign": "*",
+    "babel": "*",
+    "babel-cli": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "gulp-babel": "*",
+    "vinyl-buffer": "*"
   },
   "dependencies": {
     "react": "^0.14.7",
