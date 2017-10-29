@@ -4,6 +4,7 @@ var reactify = require('reactify');
 var babel = require('gulp-babel');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
+var sourcemaps = require('gulp-sourcemaps');
 
 
 gulp.task('browserify', function() {
@@ -13,6 +14,7 @@ gulp.task('browserify', function() {
         .pipe(source('main.js'))
         .pipe(buffer())
         .pipe(babel())
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/scripts'));
 });
 

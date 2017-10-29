@@ -23,6 +23,7 @@
     "vinyl-buffer": "*"
   },
   "dependencies": {
+    "gulp-sourcemaps": "^2.6.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
   }

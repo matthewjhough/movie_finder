@@ -9,10 +9,9 @@ let AppActions = {
         });
     },
     recieveMovieResults(movies) {
-        console.log(movies);
         AppDispatcher.handleViewAction({
             actionType: AppConstants.RECIEVE_MOVIE_RESULTS,
-            movie: movie
+            movies: movies
         });
     }
 };
